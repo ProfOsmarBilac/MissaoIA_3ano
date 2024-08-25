@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Passando num cruzamento, de carro, você se depara com uma pessoa segunrando um cartaz escrito: 'FOME'. Qual a sua atitude?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmação"
+                texto: "Sente-se comovido pela pessoa!",
+                afirmacao: "Arruma uns trocados que encontra no momento e oferta à pessoa, como ajuda para quem está com fome."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmação"
+                texto: "Não liga para a pessoa!",
+                afirmacao: "Não dá nenhuma atenção, pois julga que a pessoa quer ajuda para o consumo de drogas ilícitas."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Num outro cruzamento, encontra uma senhora com três criânças pequenas, pedindo ajuda financeira. Qual o seu comportamento?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "afirmação"
+                texto: "Nao dá a mínima atenção!",
+                afirmacao: "A cena não chama a atenção, pois tem muitas pessoas utilizando de artimanhas para impressionar ou comover outras, utlizando crianças."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "afirmação"
+                texto: "Solidariza-se com a situação!",
+                afirmacao: "Ajuda na medida do possível, com gorjetas, para tentar melhorar a situação dessa senhora com as crianças pequenas, expostas na rua."
             }           
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Para estacionar o seu veículo, ao ir em alguma loja, qual a sua posição?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "afirmação"
+                texto: "Procura um lugar na rua, mesmo que fique um pouco longe do estabelecimento!",
+                afirmacao: "Mesmo sendo difícil arrumar vaga para estacionar e dos perigos, deixa o veículo na rua, para diminuir os gastos financeiros."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "Procura um estaciomento particular!",
+                afirmacao: "Considera mais seguro o estacionamento particular, mais confotável, mesmo que tenha uma despesa maior."
             }                    
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Para fechar o dia, precisa passar no supermercado e fazer algumas compras. Como se comportas?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "afirmação"
+                texto: "Faz compras apressadas, sem ver direito os preços!",
+                afirmacao: "Faz as compras correndo, sem consultar direito os preços e validade dos produtos, para chegar logo na fila do caixa e, ir para casa."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "afirmação"
+                texto: "Procura ver com calma os itens disponíveis!",
+                afirmacao: "Analisa os produtos disponíveis, buscando melhores preços e validade, mesmo que atrase um pouco."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Na volta para casa, muitos carros, o trânsito não está fluindo de acordo. Como você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "afirmação"
+                texto: "Tenta driblar os outros carros, forçando mudanças de faixas, e acelerar bem quando possível!",
+                afirmacao: "Não gosta de andar devagar e não vê a hora de chegar em casa. Está estressado e é agressivo no trânsito!"
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "afirmação"
+                texto: "Mantém a calma no trânsito, seguindo na sua pista e não se excedendo na velocidade!",
+                afirmacao: "Mesmo com vontade de chegar logo em casa, segue o fluxo da pista com paciência. Gosta de dirigir defensivamente!"
             }            
         ]
     },
@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Nesse dia...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
